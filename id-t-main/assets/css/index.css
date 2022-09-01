@@ -1,0 +1,197 @@
+:root {
+  --clr-1: #fff;
+  --clr-2: #000;
+  --clr-3: #492c1d;
+  --clr-4: #80bf69;
+}
+* {
+  margin: 0;
+  padding: 0;
+  overflow: show;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../../assets/fonts/LEMONMILK-Bold.otf);
+  font-weight: bold;
+}
+
+.container {
+  height: 100vh;
+  width: 99vw;
+  background-color: var(--clr-1);
+}
+header {
+  background-image: url("../../assets/img/wecare.jpg");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container header .baner {
+  display: flex;
+  justify-content: center;
+  background-color: var(--clr-2);
+  height: 150px;
+}
+
+.container header .baner img {
+  width: 150px;
+}
+
+.container header .baner img:hover {
+  transform: rotate(360deg);
+  transition: all 1s ease-in-out 0s;
+}
+.wecare {
+  font-family: myFirstFont;
+  font-size: 5rem;
+  height: 575px;
+  color: var(--clr-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welkombij {
+  height: 100px;
+}
+.photo1 {
+  margin-top: 25px;
+  overflow: hidden;
+}
+.photo2 {
+  margin-top: -55px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+.welkom {
+  margin-top: -60px;
+  padding-left: 50px;
+  font-family: forma-djr-deck, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--clr-3);
+}
+.responsive {
+  width: 100%;
+  min-width: 500px;
+  height: auto;
+}
+.youtubevideo {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+video {
+  border: 5px solid black;
+}
+.lines {
+  margin-top: 25px;
+}
+.mensenplaatje {
+  margin-top: 50px;
+  margin-right: 50px;
+  box-shadow: 30px -16px var(--clr-4);
+  width: 50%;
+}
+.article1 {
+  display: flex;
+}
+.linesRechts {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.articletxt {
+  padding: 2rem;
+}
+.articletxt h3 {
+  font-family: forma-djr-deck, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3rem;
+  color: var(--clr-4);
+}
+.articletxt p {
+  font-family: forma-djr-deck, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+}
+.articletxt p a {
+  font-family: forma-djr-deck, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--clr-2);
+}
+.article2 {
+  display: flex;
+}
+.wereldbolgif {
+  margin-right: 150px;
+  margin-left: 150px;
+  height: auto;
+  width: auto;
+}
+footer {
+  height: 100px;
+  background-color: var(--clr-2);
+  color: var(--clr-1);
+  padding: 25px;
+  font-family: forma-djr-deck, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+#DatForenklaR1_Loader_Container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+  z-index: 1001;
+  background-color: #000000;
+  color: rgb(1, 11, 9);
+  clip-path: inset(0 0 0% 0);
+  transition: clip-path 1.3s;
+}
+
+.DatForenklaR1_Loader_Out {
+  clip-path: inset(0 0 100% 0) !important;
+}
+
+#DatForenklaR1_Loader_Content {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 600ms;
+}
+
+.DatForenklaR1_Loader_Out #DatForenklaR1_Loader_Content {
+  opacity: 0 !important;
+}
+
+#DatForenklaR1_Loader_Text {
+  margin-top: 24px;
+  display: block;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
